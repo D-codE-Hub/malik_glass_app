@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include malik_glass_app *.css
+recursive-include malik_glass_app *.csv
+recursive-include malik_glass_app *.html
+recursive-include malik_glass_app *.ico
+recursive-include malik_glass_app *.js
+recursive-include malik_glass_app *.json
+recursive-include malik_glass_app *.md
+recursive-include malik_glass_app *.png
+recursive-include malik_glass_app *.py
+recursive-include malik_glass_app *.svg
+recursive-include malik_glass_app *.txt
+recursive-exclude malik_glass_app *.pyc
