@@ -31,7 +31,7 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Quotation" : "public/js/quotation.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -173,3 +173,18 @@ user_data_fields = [
 # 	"malik_glass_app.auth.validate"
 # ]
 
+fixtures = [
+		{
+         "dt": "Custom Field", 
+         "filters":[["name", "in", ['Quotation Item-width',
+		 							'Quotation Item-height',
+									'Quotation Item-quantity_of_glass',
+		 							'Quotation Item-per_sqm',
+									'Quotation Item-total_sqm',
+									'Quotation Item-side_w',
+									'Quotation Item-side_h',
+									'Quotation Item-running_meter',
+									'Quotation-total_running_mtr'
+									 ]]]
+      }
+]
