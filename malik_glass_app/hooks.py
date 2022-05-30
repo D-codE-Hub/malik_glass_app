@@ -174,17 +174,28 @@ user_data_fields = [
 # ]
 
 fixtures = [
-		{
-         "dt": "Custom Field", 
-         "filters":[["name", "in", ['Quotation Item-width',
-		 							'Quotation Item-height',
+	{
+		"dt": "Custom Field", 
+		"filters":[["name", "in", [
+									'Quotation Item-width',
+									'Quotation Item-height',
 									'Quotation Item-quantity_of_glass',
-		 							'Quotation Item-per_sqm',
+									'Quotation Item-per_sqm',
 									'Quotation Item-total_sqm',
 									'Quotation Item-side_w',
 									'Quotation Item-side_h',
 									'Quotation Item-running_meter',
-									'Quotation-total_running_mtr'
-									 ]]]
-      }
+									'Quotation-total_running_mtr',
+									'Sales Invoice-total_running_mtr',
+									'Sales Invoice Item-height',
+									'Sales Invoice Item-per_sqm',
+									'Sales Invoice Item-quantity_of_glass',
+									'Sales Invoice Item-running_meter',
+									'Sales Invoice Item-side_h',
+									'Sales Invoice Item-side_w',
+									'Sales Invoice Item-total_sqm',
+									'Sales Invoice Item-width'
+
+								]]]
+	}
 ]
