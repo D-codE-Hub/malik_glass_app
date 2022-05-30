@@ -194,7 +194,9 @@ fixtures = [
 									'Sales Invoice Item-side_h',
 									'Sales Invoice Item-side_w',
 									'Sales Invoice Item-total_sqm',
-									'Sales Invoice Item-width'
+									'Sales Invoice Item-width',
+									'Quotation Item-unit',
+									'Sales Invoice Item-unit'
 
 								]]]
 	}
