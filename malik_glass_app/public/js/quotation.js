@@ -45,8 +45,11 @@ let set_datas = function(frm, cdt, cdn) {
 
 	frappe.model.set_value(d.doctype, d.name, "running_meter",  ((d.side_h*height)+(d.side_w*width))*d.quantity_of_glass);
 	frm.set_value("total_running_mtr", 0);
+	frm.set_value("total_sqm", 0);
 	for (let row of frm.doc.items) {
 		frm.doc.total_running_mtr += flt(row.running_meter);
+		frm.doc.total_sqm += flt(row.total_sqm);
 	}
 	frm.refresh_field("total_running_mtr");
+	frm.refresh_field("total_sqm");
 }
